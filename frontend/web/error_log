@@ -1,0 +1,460 @@
+[23-May-2019 04:42:21 UTC] An Error occurred while handling another error:
+ParseError: syntax error, unexpected '{' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:313
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('error')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#8 {main}
+Previous exception:
+ParseError: syntax error, unexpected '{' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:313
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('giftajax')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/giftajax', Array)
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/ruvemru/public_html/cz/mysite/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'ORACLE_HOME' => '/usr/lib/oracle/12.1/client64/lib',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'br, gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTENT_LENGTH' => '9',
+    'HTTP_COOKIE' => '_identity-frontend=344b11edef9a7fb21d40f63eda1d06b3d39ee72dfe44cf4fd3e3655d762e7923a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22TaV-06w1JsPYZyxZ4nzmLY2aOlvpUE8G%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a4813c802abb863ef581c6f091c2f986737c7e6b7497088fe291a3a94c56b7a1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CwfT9k4j5GIFXIX0ZMBQMaTSy7nh6mve%22%3B%7D; advanced-frontend=d414b73036058038e5da5b6d5c3b943b; _identity-backend=ad126c18815d70c54aec03ae7d0cb3bd703577a9140750ac5c7994085349ff84a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224jB3qSubpcqPNlnhpN9M4duj70-Faklv%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9cf76900c75ec0df78e3124db7f41c610a727014d94d5a8601c1b9ec3e48c96a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221mqFnp6qv1adFyoFU5m7-AL4RAzGH_hR%22%3B%7D; advanced-backend=1304a1d2229119700e32784331927fee; _csrf=8b5442cd9458000656f4abad83d634e64ec097f4295903783c2f96af8dfbfbcaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JxK9aALKbShzhHwzmDfJ9yMbZCh917zW%22%3B%7D; PHPSESSID=00ed1b552a5b4fab5280844d607830c9; _ga=GA1.2.1108819210.1497904562; __cfduid=daf11d59b012b8498d8b8fe49776e31dd1550046421; _ym_d=1545848105; _ym_uid=1497904619507476305; amplitude_idruvem.ru=eyJkZXZpY2VJZCI6IjljOWM4ZDk0LWJjMDctNDlmMi1hYmEyLTljMTBlN2E0MWZmMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUwMDQ5NjY1NTc2NywibGFzdEV2ZW50VGltZSI6MTUwMDQ5NjY1NTc2NywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9',
+    'HTTP_HOST' => 'cz.ruvem.ru',
+    'HTTP_REFERER' => 'https://cz.ruvem.ru/mysite/public_html/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'HTTP_ORIGIN' => 'https://cz.ruvem.ru',
+    'HTTP_X_CSRF_TOKEN' => 'ziVD1fA7g9ZOTf77BTIKADuQx6BVZLmkPbDZN30rJ4WNUiWByVC3vHsKt71de1IwYd2F8RgF7fdEh7dfS0ZR4A==',
+    'REDIRECT_UNIQUE_ID' => 'XOYkrL9cyWPPtWAxPxHj7QAAAAE',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'REDIRECT_HTTP2' => 'on',
+    'REDIRECT_H2PUSH' => 'on',
+    'REDIRECT_H2_PUSH' => 'on',
+    'REDIRECT_H2_PUSHED' => '',
+    'REDIRECT_H2_PUSHED_ON' => '',
+    'REDIRECT_H2_STREAM_ID' => '1',
+    'REDIRECT_H2_STREAM_TAG' => '260-1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XOYkrL9cyWPPtWAxPxHj7QAAAAE',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'HTTP2' => 'on',
+    'H2PUSH' => 'on',
+    'H2_PUSH' => 'on',
+    'H2_PUSHED' => '',
+    'H2_PUSHED_ON' => '',
+    'H2_STREAM_ID' => '1',
+    'H2_STREAM_TAG' => '260-1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'cz.ruvem.ru',
+    'SERVER_ADDR' => '88.99.217.197',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '5.189.192.183',
+    'DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'SERVER_ADMIN' => 'webmaster@cz.ruvem.ru',
+    'SCRIPT_FILENAME' => '/home/ruvemru/public_html/cz/mysite/public_html/index.php',
+    'REMOTE_PORT' => '55406',
+    'REDIRECT_URL' => '/mysite/public_html/giftajax',
+    'SERVER_PROTOCOL' => 'HTTP/2.0',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/mysite/public_html/giftajax',
+    'SCRIPT_NAME' => '/mysite/public_html/index.php',
+    'PHP_SELF' => '/mysite/public_html/index.php',
+    'REQUEST_TIME_FLOAT' => 1558586540.9528510570526123046875,
+    'REQUEST_TIME' => 1558586540,
+]
+[23-May-2019 04:42:27 UTC] An Error occurred while handling another error:
+ParseError: syntax error, unexpected '{' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:313
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('error')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#8 {main}
+Previous exception:
+ParseError: syntax error, unexpected '{' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:313
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('index')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/ruvemru/public_html/cz/mysite/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'ORACLE_HOME' => '/usr/lib/oracle/12.1/client64/lib',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'br, gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity-frontend=344b11edef9a7fb21d40f63eda1d06b3d39ee72dfe44cf4fd3e3655d762e7923a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22TaV-06w1JsPYZyxZ4nzmLY2aOlvpUE8G%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a4813c802abb863ef581c6f091c2f986737c7e6b7497088fe291a3a94c56b7a1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CwfT9k4j5GIFXIX0ZMBQMaTSy7nh6mve%22%3B%7D; advanced-frontend=d414b73036058038e5da5b6d5c3b943b; _identity-backend=ad126c18815d70c54aec03ae7d0cb3bd703577a9140750ac5c7994085349ff84a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224jB3qSubpcqPNlnhpN9M4duj70-Faklv%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9cf76900c75ec0df78e3124db7f41c610a727014d94d5a8601c1b9ec3e48c96a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221mqFnp6qv1adFyoFU5m7-AL4RAzGH_hR%22%3B%7D; advanced-backend=1304a1d2229119700e32784331927fee; _csrf=8b5442cd9458000656f4abad83d634e64ec097f4295903783c2f96af8dfbfbcaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JxK9aALKbShzhHwzmDfJ9yMbZCh917zW%22%3B%7D; PHPSESSID=00ed1b552a5b4fab5280844d607830c9; _ga=GA1.2.1108819210.1497904562; __cfduid=daf11d59b012b8498d8b8fe49776e31dd1550046421; _ym_d=1545848105; _ym_uid=1497904619507476305; amplitude_idruvem.ru=eyJkZXZpY2VJZCI6IjljOWM4ZDk0LWJjMDctNDlmMi1hYmEyLTljMTBlN2E0MWZmMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUwMDQ5NjY1NTc2NywibGFzdEV2ZW50VGltZSI6MTUwMDQ5NjY1NTc2NywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9',
+    'HTTP_HOST' => 'cz.ruvem.ru',
+    'HTTP_REFERER' => 'https://cz.ruvem.ru/mysite/public_html/about.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+    'UNIQUE_ID' => 'XOYks5pXsEG@PW@MaGHb2QAAAAE',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'HTTP2' => 'on',
+    'H2PUSH' => 'on',
+    'H2_PUSH' => 'on',
+    'H2_PUSHED' => '',
+    'H2_PUSHED_ON' => '',
+    'H2_STREAM_ID' => '1',
+    'H2_STREAM_TAG' => '82-1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'cz.ruvem.ru',
+    'SERVER_ADDR' => '88.99.217.197',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '5.189.192.183',
+    'DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'SERVER_ADMIN' => 'webmaster@cz.ruvem.ru',
+    'SCRIPT_FILENAME' => '/home/ruvemru/public_html/cz/mysite/public_html/index.php',
+    'REMOTE_PORT' => '55415',
+    'SERVER_PROTOCOL' => 'HTTP/2.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/mysite/public_html/',
+    'SCRIPT_NAME' => '/mysite/public_html/index.php',
+    'PHP_SELF' => '/mysite/public_html/index.php',
+    'REQUEST_TIME_FLOAT' => 1558586547.554913997650146484375,
+    'REQUEST_TIME' => 1558586547,
+]
+[23-May-2019 04:42:30 UTC] An Error occurred while handling another error:
+ParseError: syntax error, unexpected '{' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:313
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('error')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#8 {main}
+Previous exception:
+ParseError: syntax error, unexpected '{' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:313
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('index')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/ruvemru/public_html/cz/mysite/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'ORACLE_HOME' => '/usr/lib/oracle/12.1/client64/lib',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'br, gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity-frontend=344b11edef9a7fb21d40f63eda1d06b3d39ee72dfe44cf4fd3e3655d762e7923a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22TaV-06w1JsPYZyxZ4nzmLY2aOlvpUE8G%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a4813c802abb863ef581c6f091c2f986737c7e6b7497088fe291a3a94c56b7a1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CwfT9k4j5GIFXIX0ZMBQMaTSy7nh6mve%22%3B%7D; advanced-frontend=d414b73036058038e5da5b6d5c3b943b; _identity-backend=ad126c18815d70c54aec03ae7d0cb3bd703577a9140750ac5c7994085349ff84a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224jB3qSubpcqPNlnhpN9M4duj70-Faklv%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9cf76900c75ec0df78e3124db7f41c610a727014d94d5a8601c1b9ec3e48c96a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221mqFnp6qv1adFyoFU5m7-AL4RAzGH_hR%22%3B%7D; advanced-backend=1304a1d2229119700e32784331927fee; _csrf=8b5442cd9458000656f4abad83d634e64ec097f4295903783c2f96af8dfbfbcaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JxK9aALKbShzhHwzmDfJ9yMbZCh917zW%22%3B%7D; PHPSESSID=00ed1b552a5b4fab5280844d607830c9; _ga=GA1.2.1108819210.1497904562; __cfduid=daf11d59b012b8498d8b8fe49776e31dd1550046421; _ym_d=1545848105; _ym_uid=1497904619507476305; amplitude_idruvem.ru=eyJkZXZpY2VJZCI6IjljOWM4ZDk0LWJjMDctNDlmMi1hYmEyLTljMTBlN2E0MWZmMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUwMDQ5NjY1NTc2NywibGFzdEV2ZW50VGltZSI6MTUwMDQ5NjY1NTc2NywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9',
+    'HTTP_HOST' => 'cz.ruvem.ru',
+    'HTTP_REFERER' => 'https://cz.ruvem.ru/mysite/public_html/about.html',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+    'UNIQUE_ID' => 'XOYktppXsEG@PW@MaGHb3AAAAAM',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'HTTP2' => 'on',
+    'H2PUSH' => 'on',
+    'H2_PUSH' => 'on',
+    'H2_PUSHED' => '',
+    'H2_PUSHED_ON' => '',
+    'H2_STREAM_ID' => '3',
+    'H2_STREAM_TAG' => '82-3',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'cz.ruvem.ru',
+    'SERVER_ADDR' => '88.99.217.197',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '5.189.192.183',
+    'DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'SERVER_ADMIN' => 'webmaster@cz.ruvem.ru',
+    'SCRIPT_FILENAME' => '/home/ruvemru/public_html/cz/mysite/public_html/index.php',
+    'REMOTE_PORT' => '55415',
+    'SERVER_PROTOCOL' => 'HTTP/2.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/mysite/public_html/',
+    'SCRIPT_NAME' => '/mysite/public_html/index.php',
+    'PHP_SELF' => '/mysite/public_html/index.php',
+    'REQUEST_TIME_FLOAT' => 1558586550.1645500659942626953125,
+    'REQUEST_TIME' => 1558586550,
+]
+[23-May-2019 05:28:42 UTC] An Error occurred while handling another error:
+ParseError: syntax error, unexpected '*' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:406
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('error')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#8 {main}
+Previous exception:
+ParseError: syntax error, unexpected '*' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:406
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('giftajax')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/giftajax', Array)
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/ruvemru/public_html/cz/mysite/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'ORACLE_HOME' => '/usr/lib/oracle/12.1/client64/lib',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'br, gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTENT_LENGTH' => '9',
+    'HTTP_COOKIE' => '_identity-frontend=344b11edef9a7fb21d40f63eda1d06b3d39ee72dfe44cf4fd3e3655d762e7923a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22TaV-06w1JsPYZyxZ4nzmLY2aOlvpUE8G%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a4813c802abb863ef581c6f091c2f986737c7e6b7497088fe291a3a94c56b7a1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CwfT9k4j5GIFXIX0ZMBQMaTSy7nh6mve%22%3B%7D; advanced-frontend=d414b73036058038e5da5b6d5c3b943b; _identity-backend=ad126c18815d70c54aec03ae7d0cb3bd703577a9140750ac5c7994085349ff84a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224jB3qSubpcqPNlnhpN9M4duj70-Faklv%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9cf76900c75ec0df78e3124db7f41c610a727014d94d5a8601c1b9ec3e48c96a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221mqFnp6qv1adFyoFU5m7-AL4RAzGH_hR%22%3B%7D; advanced-backend=1304a1d2229119700e32784331927fee; _csrf=8b5442cd9458000656f4abad83d634e64ec097f4295903783c2f96af8dfbfbcaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JxK9aALKbShzhHwzmDfJ9yMbZCh917zW%22%3B%7D; PHPSESSID=00ed1b552a5b4fab5280844d607830c9; _ga=GA1.2.1108819210.1497904562; __cfduid=daf11d59b012b8498d8b8fe49776e31dd1550046421; _ym_d=1545848105; _ym_uid=1497904619507476305; amplitude_idruvem.ru=eyJkZXZpY2VJZCI6IjljOWM4ZDk0LWJjMDctNDlmMi1hYmEyLTljMTBlN2E0MWZmMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUwMDQ5NjY1NTc2NywibGFzdEV2ZW50VGltZSI6MTUwMDQ5NjY1NTc2NywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9',
+    'HTTP_HOST' => 'cz.ruvem.ru',
+    'HTTP_REFERER' => 'https://cz.ruvem.ru/mysite/public_html/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'HTTP_ORIGIN' => 'https://cz.ruvem.ru',
+    'HTTP_X_CSRF_TOKEN' => 'HrlOQiHF1LJ4t1B9PrlmLXIuVn0zDlPHojZyw-6ZV3xdzigWGK7g2E3wGTtm8D4dKGMULH5vB5TbARyr2PQhGQ==',
+    'REDIRECT_UNIQUE_ID' => 'XOYvipyZYFnqL2roilUhVwAAAAE',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'REDIRECT_HTTP2' => 'on',
+    'REDIRECT_H2PUSH' => 'on',
+    'REDIRECT_H2_PUSH' => 'on',
+    'REDIRECT_H2_PUSHED' => '',
+    'REDIRECT_H2_PUSHED_ON' => '',
+    'REDIRECT_H2_STREAM_ID' => '1',
+    'REDIRECT_H2_STREAM_TAG' => '458-1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XOYvipyZYFnqL2roilUhVwAAAAE',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'HTTP2' => 'on',
+    'H2PUSH' => 'on',
+    'H2_PUSH' => 'on',
+    'H2_PUSHED' => '',
+    'H2_PUSHED_ON' => '',
+    'H2_STREAM_ID' => '1',
+    'H2_STREAM_TAG' => '458-1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'cz.ruvem.ru',
+    'SERVER_ADDR' => '88.99.217.197',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '5.189.192.183',
+    'DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'SERVER_ADMIN' => 'webmaster@cz.ruvem.ru',
+    'SCRIPT_FILENAME' => '/home/ruvemru/public_html/cz/mysite/public_html/index.php',
+    'REMOTE_PORT' => '50428',
+    'REDIRECT_URL' => '/mysite/public_html/giftajax',
+    'SERVER_PROTOCOL' => 'HTTP/2.0',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/mysite/public_html/giftajax',
+    'SCRIPT_NAME' => '/mysite/public_html/index.php',
+    'PHP_SELF' => '/mysite/public_html/index.php',
+    'REQUEST_TIME_FLOAT' => 1558589322.43536090850830078125,
+    'REQUEST_TIME' => 1558589322,
+]
+[23-May-2019 05:28:45 UTC] An Error occurred while handling another error:
+ParseError: syntax error, unexpected '*' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:406
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('error')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#8 {main}
+Previous exception:
+ParseError: syntax error, unexpected '*' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:406
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('index')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/ruvemru/public_html/cz/mysite/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'ORACLE_HOME' => '/usr/lib/oracle/12.1/client64/lib',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'br, gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity-frontend=344b11edef9a7fb21d40f63eda1d06b3d39ee72dfe44cf4fd3e3655d762e7923a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22TaV-06w1JsPYZyxZ4nzmLY2aOlvpUE8G%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a4813c802abb863ef581c6f091c2f986737c7e6b7497088fe291a3a94c56b7a1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CwfT9k4j5GIFXIX0ZMBQMaTSy7nh6mve%22%3B%7D; advanced-frontend=d414b73036058038e5da5b6d5c3b943b; _identity-backend=ad126c18815d70c54aec03ae7d0cb3bd703577a9140750ac5c7994085349ff84a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224jB3qSubpcqPNlnhpN9M4duj70-Faklv%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9cf76900c75ec0df78e3124db7f41c610a727014d94d5a8601c1b9ec3e48c96a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221mqFnp6qv1adFyoFU5m7-AL4RAzGH_hR%22%3B%7D; advanced-backend=1304a1d2229119700e32784331927fee; _csrf=8b5442cd9458000656f4abad83d634e64ec097f4295903783c2f96af8dfbfbcaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JxK9aALKbShzhHwzmDfJ9yMbZCh917zW%22%3B%7D; PHPSESSID=00ed1b552a5b4fab5280844d607830c9; _ga=GA1.2.1108819210.1497904562; __cfduid=daf11d59b012b8498d8b8fe49776e31dd1550046421; _ym_d=1545848105; _ym_uid=1497904619507476305; amplitude_idruvem.ru=eyJkZXZpY2VJZCI6IjljOWM4ZDk0LWJjMDctNDlmMi1hYmEyLTljMTBlN2E0MWZmMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUwMDQ5NjY1NTc2NywibGFzdEV2ZW50VGltZSI6MTUwMDQ5NjY1NTc2NywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9',
+    'HTTP_HOST' => 'cz.ruvem.ru',
+    'HTTP_REFERER' => 'https://cz.ruvem.ru/mysite/public_html/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'UNIQUE_ID' => 'XOYvjZyZYFnqL2roilUhXwAAAAM',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'HTTP2' => 'on',
+    'H2PUSH' => 'on',
+    'H2_PUSH' => 'on',
+    'H2_PUSHED' => '',
+    'H2_PUSHED_ON' => '',
+    'H2_STREAM_ID' => '3',
+    'H2_STREAM_TAG' => '458-3',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'cz.ruvem.ru',
+    'SERVER_ADDR' => '88.99.217.197',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '5.189.192.183',
+    'DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'SERVER_ADMIN' => 'webmaster@cz.ruvem.ru',
+    'SCRIPT_FILENAME' => '/home/ruvemru/public_html/cz/mysite/public_html/index.php',
+    'REMOTE_PORT' => '50428',
+    'SERVER_PROTOCOL' => 'HTTP/2.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/mysite/public_html/',
+    'SCRIPT_NAME' => '/mysite/public_html/index.php',
+    'PHP_SELF' => '/mysite/public_html/index.php',
+    'REQUEST_TIME_FLOAT' => 1558589325.8702199459075927734375,
+    'REQUEST_TIME' => 1558589325,
+]
+[23-May-2019 05:28:54 UTC] An Error occurred while handling another error:
+ParseError: syntax error, unexpected '*' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:406
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('error')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#8 {main}
+Previous exception:
+ParseError: syntax error, unexpected '*' in /home/ruvemru/public_html/cz/mysite/frontend/controllers/SiteController.php:406
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(637): class_exists('frontend\\contro...')
+#3 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#4 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('index')
+#5 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#6 /home/ruvemru/public_html/cz/mysite/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/ruvemru/public_html/cz/mysite/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'ORACLE_HOME' => '/usr/lib/oracle/12.1/client64/lib',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'br, gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_identity-frontend=344b11edef9a7fb21d40f63eda1d06b3d39ee72dfe44cf4fd3e3655d762e7923a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22TaV-06w1JsPYZyxZ4nzmLY2aOlvpUE8G%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a4813c802abb863ef581c6f091c2f986737c7e6b7497088fe291a3a94c56b7a1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CwfT9k4j5GIFXIX0ZMBQMaTSy7nh6mve%22%3B%7D; advanced-frontend=d414b73036058038e5da5b6d5c3b943b; _identity-backend=ad126c18815d70c54aec03ae7d0cb3bd703577a9140750ac5c7994085349ff84a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224jB3qSubpcqPNlnhpN9M4duj70-Faklv%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9cf76900c75ec0df78e3124db7f41c610a727014d94d5a8601c1b9ec3e48c96a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221mqFnp6qv1adFyoFU5m7-AL4RAzGH_hR%22%3B%7D; advanced-backend=1304a1d2229119700e32784331927fee; _csrf=8b5442cd9458000656f4abad83d634e64ec097f4295903783c2f96af8dfbfbcaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JxK9aALKbShzhHwzmDfJ9yMbZCh917zW%22%3B%7D; PHPSESSID=00ed1b552a5b4fab5280844d607830c9; _ga=GA1.2.1108819210.1497904562; __cfduid=daf11d59b012b8498d8b8fe49776e31dd1550046421; _ym_d=1545848105; _ym_uid=1497904619507476305; amplitude_idruvem.ru=eyJkZXZpY2VJZCI6IjljOWM4ZDk0LWJjMDctNDlmMi1hYmEyLTljMTBlN2E0MWZmMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUwMDQ5NjY1NTc2NywibGFzdEV2ZW50VGltZSI6MTUwMDQ5NjY1NTc2NywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9',
+    'HTTP_HOST' => 'cz.ruvem.ru',
+    'HTTP_REFERER' => 'https://cz.ruvem.ru/mysite/public_html/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'UNIQUE_ID' => 'XOYvlnImbhfMVuvzlo2RbQAAAAE',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'cz.ruvem.ru',
+    'HTTP2' => 'on',
+    'H2PUSH' => 'on',
+    'H2_PUSH' => 'on',
+    'H2_PUSHED' => '',
+    'H2_PUSHED_ON' => '',
+    'H2_STREAM_ID' => '1',
+    'H2_STREAM_TAG' => '213-1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'cz.ruvem.ru',
+    'SERVER_ADDR' => '88.99.217.197',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '5.189.192.183',
+    'DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ruvemru/public_html/cz',
+    'SERVER_ADMIN' => 'webmaster@cz.ruvem.ru',
+    'SCRIPT_FILENAME' => '/home/ruvemru/public_html/cz/mysite/public_html/index.php',
+    'REMOTE_PORT' => '50516',
+    'SERVER_PROTOCOL' => 'HTTP/2.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/mysite/public_html/',
+    'SCRIPT_NAME' => '/mysite/public_html/index.php',
+    'PHP_SELF' => '/mysite/public_html/index.php',
+    'REQUEST_TIME_FLOAT' => 1558589334.2728660106658935546875,
+    'REQUEST_TIME' => 1558589334,
+]
