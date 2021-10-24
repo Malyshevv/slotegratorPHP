@@ -54,10 +54,10 @@ $this->title = 'Profile';
 				<input type="number" class="form-control" id="convert" name="convert" placeholder="Enter how much withdraw" required>
 				<br>
 				
-				<p>You get on your blanace: <span id="your-get"><b></b></span></p>
+				<p>You get on your blanace: <span id="yourGet"><b></b></span></p>
 				
 				<br>
-				<span class="send_money btn btn-info" id="cash-convert'" disabled>Send!</span>
+				<span class="cashConvert btn btn-info" id="cashConvert'" disabled="disabled">Send!</span>
 			</form>
 		</div>
 		 <div class="modal-footer">
@@ -79,7 +79,7 @@ $this->title = 'Profile';
 		<p>User type: <?=$getAll['type']?></p>
 		<?php
 			if($getAll['type'] == 'admin') {
-				print '<a href="./managergift" class="btn btn-primary" style="float: right;">Manager WOW Gift</a>  
+				print '<a href="./manager" class="btn btn-primary" style="float: right;">Manager WOW Gift</a>  
 				<a href="./bank" class="btn btn-primary" style="float: right; margin-right: 15px;">Bank</a> 
 				';
 			}

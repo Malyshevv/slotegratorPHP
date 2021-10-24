@@ -3,7 +3,7 @@
 namespace frontend\models;
 use Yii;
 
-class Managergift extends \yii\db\ActiveRecord{
+class ManagerGift extends \yii\db\ActiveRecord{
 
 
       public static function getGift() {

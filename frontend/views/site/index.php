@@ -15,7 +15,7 @@ $this->title = 'Home Page';
         <p><a class="btn btn-lg btn-success" href="./signup">Signup NOW!</a></p>
        <?php } else { ?>
        	<h1>Try your luck NOW!</h1>
-       	<span class="gift_btn btn btn-danger">CLICK!</span>
+       	<span id="giftBtn" class="btn btn-danger">CLICK!</span>
        <?php } ?>
     </div>
 

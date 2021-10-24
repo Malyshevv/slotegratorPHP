@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a54e29e-c3d4-4a58-8c9a-74a9cda94ee7" name="Changes" comment="" />
+    <list default="true" id="8a54e29e-c3d4-4a58-8c9a-74a9cda94ee7" name="Changes" comment="delete file">
+      <change afterPath="$PROJECT_DIR$/frontend/web/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/web/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/runtime/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,8 +49,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634926332055</updated>
-      <workItem from="1634926334786" duration="316000" />
+      <workItem from="1634926334786" duration="528000" />
+      <workItem from="1635060946312" duration="2149000" />
     </task>
+    <task id="LOCAL-00001" summary="delete file">
+      <created>1634926817592</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634926817592</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -44,12 +68,59 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="735986bc-e716-407a-8242-edf7ed1b2402">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="735986bc-e716-407a-8242-edf7ed1b2402" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="delete file" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete file" />
   </component>
 </project>

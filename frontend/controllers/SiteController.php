@@ -13,9 +13,10 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
+
 use frontend\models\ContactForm;
 use frontend\models\ProfilePage;
-use frontend\models\Managergift;
+use frontend\models\ManagerGift;
 use frontend\models\Bank;
 /**
  * Site controller
@@ -276,8 +277,8 @@ class SiteController extends Controller
         ]);
     }
 
-	public function actionManagergift() {
-    	$getGift = Managergift::getGift();
+	public function actionManager() {
+    	$getGift = ManagerGift::getGift();
 
     	return $this->render('managergift',[
             'getGift' => $getGift,
@@ -376,9 +377,10 @@ class SiteController extends Controller
 																		'send' => $send,
 																		'quantity' => $quantity
 																		])->execute();
-				if($typeGift != 3)	{													
+				if($typeGift == 2)	{													
 					$this->updateUserWallet($typeGift, $userID, $quantity);
-				} else {
+				} 
+                if($typeGift == 3) {
 					$this->addAdresSend($userID,$idGift,$address);
 				}
 
@@ -403,13 +405,15 @@ class SiteController extends Controller
 
 	public function updateUserWallet($typeGift, $userID, $quantity) {
 
-		if($typeGift == 1) {
+		/*if($typeGift == 1) {
 			$column = 'cash';
 			$balance = Yii::$app->user->identity->cash;
 		} else {
 			$column = 'Points';
 			$balance = Yii::$app->user->identity->Points;
-		}		
+		}*/		
+        $column = 'Points';
+        $balance = Yii::$app->user->identity->Points;
 
 		$transaction = Yii::$app->db->beginTransaction();
 
@@ -449,7 +453,7 @@ class SiteController extends Controller
     		if(isset($_POST['value']) && isset($_POST['name'])) {
 
     			$userID = Yii::$app->user->identity->id;
-				$name = $_POST['name'];
+				$name = strtolower($_POST['name']);
 				$value = $_POST['value'];
 				$error = false;
 
