@@ -5,7 +5,7 @@ namespace console\controllers;
 use Yii;
 use yii\console\Controller;
 
-class HelloController extends Controller
+class GiftController extends Controller
 {
 
 	public $count;
