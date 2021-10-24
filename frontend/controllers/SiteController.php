@@ -504,51 +504,7 @@ class SiteController extends Controller
 
     public function actionBanksend() {
     	if(\Yii::$app->request->isAjax) {
-    		if(isset($_POST['bank_money'])) {
-
-    			$bank_money = $_POST['bank_money'];
-    			$id_user = (int)Yii::$app->user->identity->id;
-    			$username = Yii::$app->user->identity->username;
-    			$user_money = Yii::$app->user->identity->cash;
-
-    			if($user_money < $bank_money) {
-    				return 'Enter to correct value!';
-    			}
-    			else {
-    				$sum_cash = $user_money - $bank_money;
-
-    				$sql = "UPDATE user SET cash = '$sum_cash' WHERE id = '$id_user'";
-	    			Yii::$app->db->createCommand($sql)->execute();
-
-	    			$select = Yii::$app->db->createCommand("SELECT money,id FROM transaction_bank WHERE id_user = $id_user")->queryOne();
-
-	    			if(!empty($select)) {
-	    				$id_bank_user = $select['id'];
-	    				$bank_user_money = $select['money'];
-
-	    				$sum = $bank_user_money + $bank_money;
-
-	    				$sql = "UPDATE transaction_bank SET money = '$sum' WHERE id = '$id_bank_user'";
-	    				Yii::$app->db->createCommand($sql)->execute();
-
-	    				return 'Operation completed successfully';
-	    			}
-	    			else {
-
-
-	    				$addMoneyBank = Yii::$app->db->createCommand()->insert('transaction_bank', [
-																		'id_user' => $id_user,
-																		'name' =>  $username,
-																		'money' => $bank_money
-																		])->execute();
-
-	    				return 'Operation completed successfully';
-	    			}
-    			}
-    		}
-    		else {
-    			return 'ajax error';
-    		}
+            return 'bank';
     	}
     }
 	/** конец **/
