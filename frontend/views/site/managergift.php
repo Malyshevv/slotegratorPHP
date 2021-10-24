@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			<tr>
 				<th>User Name</th>
 				<th>Adress</th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -35,6 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 					<tr>
 						<td>'.$gift['name'].'</td>
 						<td>'.$gift['adress'].'</td>
+						<td><span class="sendGiftPost btn btn-info">Send</span</td>
 					</tr>
 				';
 			}
