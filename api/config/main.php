@@ -1,23 +1,25 @@
 <?php
-
 $params = array_merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
+    require __DIR__ . '/../../common/config/params.php',
+    require __DIR__ . '/../../common/config/params-local.php',
+    require __DIR__ . '/params.php',
+    require __DIR__ . '/params-local.php'
 );
 
 return [
     'id' => 'app-api',
-    'basePath' => dirname(__DIR__),    
+    'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'modules' => [
         'v1' => [
-            'basePath' => '@app/modules/v1',
-            'class' => 'api\modules\v1\Module'
-        ]
+            'class' => 'api\modules\v1\Module',
+        ],
     ],
-    'components' => [    
+    'components' => [
+        'request' => [
+            'baseUrl' => '/api',
+            'csrfParam' => '_csrf-backend',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => false,
@@ -37,18 +39,15 @@ return [
             'showScriptName' => false,
             'rules' => [
                 [
-                    'class' => \yii\rest\UrlRule::class,
-                    'controller' => ['v1/bank'],
-                    'prefix' => 'api',
-                    'tokens' => [
-                        '{id}' => '<id:\\w+>'
-                    ]  
-                ]
-            ],        
+                    'class' => 'yii\rest\UrlRule', 
+                    'controller' => 'v1/bank',
+                    'pluralize' => false,
+                    'extraPatterns' => [
+                        'GET' => 'index'
+                    ]
+                ],
+            ],         
         ]
     ],
     'params' => $params,
 ];
-
-
-
