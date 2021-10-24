@@ -4,6 +4,11 @@
 </IfModule>
  
 <IfModule mod_rewrite.c>
+
+    # Если запрос начинается с /api, то заменяем на /api/web/
+    RewriteCond %{REQUEST_URI} ^/(api)
+    RewriteRule ^api(/.*)?$ api/web$1 [L]
+
     # если /admin, то в backend
     RewriteCond %{REQUEST_URI} ^/(admin)
     RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
