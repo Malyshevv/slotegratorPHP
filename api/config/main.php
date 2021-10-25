@@ -43,7 +43,7 @@ return [
                     'controller' => 'v1/bank',
                     'pluralize' => false,
                     'extraPatterns' => [
-                        'GET' => 'index'
+                        'GET moneysend' => 'moneysend',
                     ]
                 ],
             ],         

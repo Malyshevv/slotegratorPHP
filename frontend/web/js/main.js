@@ -207,3 +207,51 @@ $("body").on("click", '.sendGiftPost',function() {
     }
 });
 
+/**Send money to bank */
+$('.bank_send_btn').click(function() {
+    var cash = $('#bank_send').val()
+    if(cash) {
+        $.ajax({
+            type:'post',
+            url: './tobank',
+            data: {'cash': cash},
+            success:function(data){
+                var data = JSON.parse(data)
+                if(data.result) {
+                    alert(data.result)
+                    document.location.reload(true);
+                }
+                if(data.error) {
+                    alert(data.error)
+                }
+            }
+        });
+    }
+});
+
+$('.startTransaction').click(function(){
+    var transactionId = $(this).attr('key')
+    var userId = $(this).attr('userID')
+
+    if(transactionId && userId) {
+        var params = "idTransaction="+transactionId+"&userID="+userId;
+        
+        $.ajax({
+            type:'GET',
+            url: './api/v1/bank/moneysend',
+            data: params,
+            success:function(data){
+                var data = JSON.parse(data)
+                if(data.result) {
+                    alert(data.result)
+                    document.location.reload(true);
+                }
+                if(data.error) {
+                    alert(data.error)
+                }
+            }
+        });
+    } else {
+        alert('Error')
+    }
+});

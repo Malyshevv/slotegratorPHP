@@ -513,7 +513,32 @@ class SiteController extends Controller
 	/** конец **/
 
     /**Отправка подарка по почте сотрдуником - для проставления статуса отправлено**/
+    public function actionTobank() {
+        if(\Yii::$app->request->isAjax) {
+    		if(isset($_POST['cash'])) {
+                $cash = $_POST['cash'];
+                $balance = Yii::$app->user->identity->cash;
+                $userID = Yii::$app->user->identity->id;
+                $userName = Yii::$app->user->identity->username;
 
+                if($balance >= $cash) {
+                    $addTransaction = Yii::$app->db->createCommand()->insert('transaction_bank', [
+                        'id_user' => $userID,
+                        'money' =>  $cash,
+                        'name' => $userName
+                    ])->execute();
+                    
+                    if($addTransaction) {
+                        return json_encode(array('result'=>'successfully'));
+                    }
+
+                } else {
+                    return json_encode(array('error'=>'error'));
+                }
+            }
+        }
+    }
+    
     public function actionSnedgiftmail() {
         if(\Yii::$app->request->isAjax) {
     		if(isset($_POST['hasGiftId'])) {
@@ -522,11 +547,11 @@ class SiteController extends Controller
                 
                 $transaction = Yii::$app->db->beginTransaction();
 
-                $updateQuantity = Yii::$app->db->createCommand()
+                $updateStatus = Yii::$app->db->createCommand()
                                 ->update('user_has_gift', array('send' => 1),'id = :id', array(':id'=> $hasGiftId))
                                 ->execute();
         
-                if($updateQuantity) {
+                if($updateStatus) {
                     $transaction->commit();
                     return json_encode(array('result'=>'successfully'));
                 } else {

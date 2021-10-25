@@ -1,3 +1,16 @@
+-------------------
+Консольная команда 
+ php yii gift <любое N число> или(Если есть проблема с памятью) php -d memory_limit=512M yii gift <любое N число> 
+Api для банка 
+ - api/v1/bank (список всех транзакций)
+ - api/v1/bank/moneysend?idTransaction=<id transaction>&userID=<id user> (отправка денежного вознагрождения юзеру)
+Основной функционал 
+- /manager (страница менеджера для отправки почты)
+- /bank (для работы с банком)
+- /profile (профиль)
+- / (на главной основной функционал для розыгрыша подарка)
+-------------------
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
