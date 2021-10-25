@@ -180,6 +180,30 @@ $('.cashConvert').click(function() {
                 document.location.reload(true);
             }
         });
+    }
+});
+
+
+/**Send a gift by MAIL*/
+$("body").on("click", '.sendGiftPost',function() {
+    if(!error) {
+        var hasGiftId = $(this).attr('key')
+        if(hasGiftId) {
+            $.ajax({
+                type:'post',
+                url: './snedgiftmail',
+                data: {'hasGiftId': hasGiftId},
+                success:function(data){
+                    var data = JSON.parse(data)
+                    if(data.result) {
+                        alert(data.result)
+                        document.location.reload(true);
+                    }
+                }
+            });
+        } else {
+            alert('Error')
         }
+    }
 });
 

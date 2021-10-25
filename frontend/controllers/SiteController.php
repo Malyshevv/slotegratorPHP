@@ -377,11 +377,13 @@ class SiteController extends Controller
 																		'send' => $send,
 																		'quantity' => $quantity
 																		])->execute();
+                $hasGiftId = Yii::$app->db->getLastInsertID(); 
+
 				if($typeGift == 2)	{													
 					$this->updateUserWallet($typeGift, $userID, $quantity);
 				} 
                 if($typeGift == 3) {
-					$this->addAdresSend($userID,$idGift,$address);
+					$this->addAdresSend($userID,$idGift,$address,$hasGiftId);
 				}
 
 				if($addGift) {
@@ -429,12 +431,13 @@ class SiteController extends Controller
 		}
 	}
 
-	public function addAdresSend($userID,$idGift,$address) {
+	public function addAdresSend($userID,$idGift,$address,$hasGiftId) {
 		$transaction = Yii::$app->db->beginTransaction();
 
 		$addAdressGift = Yii::$app->db->createCommand()->insert('adress_user', [
 			'id_gift' => $idGift,
 			'id_user' =>  $userID,
+            'userhasgift_id' =>  $hasGiftId,
 			'address' => $address
 		])->execute();
 
@@ -509,4 +512,33 @@ class SiteController extends Controller
     }
 	/** конец **/
 
+    /**Отправка подарка по почте сотрдуником - для проставления статуса отправлено**/
+
+    public function actionSnedgiftmail() {
+        if(\Yii::$app->request->isAjax) {
+    		if(isset($_POST['hasGiftId'])) {
+                //$idSend = $_POST['id']; хотел добавить возможность указания zip кода но решил что лишнее и сделал просто апдейт статуса
+                $hasGiftId = $_POST['hasGiftId'];
+                
+                $transaction = Yii::$app->db->beginTransaction();
+
+                $updateQuantity = Yii::$app->db->createCommand()
+                                ->update('user_has_gift', array('send' => 1),'id = :id', array(':id'=> $hasGiftId))
+                                ->execute();
+        
+                if($updateQuantity) {
+                    $transaction->commit();
+                    return json_encode(array('result'=>'successfully'));
+                } else {
+                    $transaction->rollback();
+                    return false;
+                }
+
+            } else {
+                return json_encode(array('error'=>'error post data'));
+            }
+        } else {
+            return json_encode(array('error'=>'ajax error'));
+        }
+    }
 }
